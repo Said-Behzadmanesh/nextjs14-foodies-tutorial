@@ -10,15 +10,6 @@ export default async function MealDetailPage({ params }) {
   }
   meal.instructions = (meal.instructions ?? "").replace(/\n/g, "<br />");
 
-  console.log("params: ", params);
-  console.log("meal: ", meal);
-  console.log("params.slug: ", params.slug);
-  console.log("image: ", meal.image);
-  console.log("summary: ", meal.summary);
-  console.log("instructions: ", meal.instructions);
-  console.log("creator: ", meal.creator);
-  console.log("creator_email: ", meal.creator_email);
-
   return (
     <>
       <header className={classes.header}>
